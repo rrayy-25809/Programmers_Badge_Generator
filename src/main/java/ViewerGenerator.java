@@ -84,10 +84,10 @@ public class ViewerGenerator {
             animation: rankAnimation 1.2s forwards ease-in-out;
         }
 
-        /* rank=50125 → relatively low → let's show ~15% filled */
+        /* rank=50125 → relatively low → let's show ~15%% filled */
         @keyframes rankAnimation {
             from { stroke-dashoffset: 220; }
-            to   { stroke-dashoffset: %s; } /* 이 값을 수정하여 채워지는 정도 조절 가능 (예: 220 * 0.85 ≈ 187 → 15% 채워짐) */
+            to   { stroke-dashoffset: %s; }
         }
 
         /* progress bar */
@@ -122,7 +122,7 @@ public class ViewerGenerator {
     </style>
 
     <!-- Card background -->
-    <rect x="0.5" y="0.5" rx="6" height="99%" stroke="#30363d" width="479" fill="#0d1117" stroke-opacity="1" />
+    <rect x="0.5" y="0.5" rx="6" height="99%%" stroke="#30363d" width="479" fill="#0d1117" stroke-opacity="1" />
 
     <!-- Header -->
     <g transform="translate(25, 35)">
@@ -161,7 +161,7 @@ public class ViewerGenerator {
         <!-- Coding test 정답률 -->
         <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 54)">
             <text class="stat" y="12.5">코딩테스트 정답률:</text>
-            <text class="stat-value" x="180" y="12.5">%s%</text>
+            <text class="stat-value" x="180" y="12.5">%s%%</text>
         </g>
 
         <!-- Coding test only solved -->
@@ -190,6 +190,6 @@ public class ViewerGenerator {
 </svg>
                 """;;
         // 순서: 레벨 채워지는 정도, 이름, 레벨, 점수, 순위, 정답률, 해결한 문제 수, 경력 점수, 가입 기간
-        return String.format(template, fillPercentage, Name, String.format("%,d", level), score, rank, accuracy, solved, careerScore, registerPeriod);
+        return String.format(template, fillPercentage, Name, String.format("%,d", level), score, rank, accuracy, String.format("%,d", solved), String.format("%,d", careerScore), String.format("%,d", registerPeriod));
     }
 }
