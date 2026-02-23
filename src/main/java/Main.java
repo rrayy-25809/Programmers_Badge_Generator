@@ -69,7 +69,7 @@ public class Main {
             ObjectMapper objectMapper = new ObjectMapper();
             Map<String, Object> myData = objectMapper.readValue(userRecordResponse.body(), Map.class);
 
-            System.out.println(myData)
+            System.out.println(myData);
 
             // svg 뱃지 생성
             if (myData != null) {
