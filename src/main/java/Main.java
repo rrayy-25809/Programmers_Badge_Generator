@@ -69,6 +69,8 @@ public class Main {
             ObjectMapper objectMapper = new ObjectMapper();
             Map<String, Object> myData = objectMapper.readValue(userRecordResponse.body(), Map.class);
 
+            System.out.println(myData)
+
             // svg 뱃지 생성
             if (myData != null) {
                 // 데이터를 안전하게 가져오기 위해 변수에 저장
