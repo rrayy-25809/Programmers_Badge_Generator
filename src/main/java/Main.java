@@ -74,10 +74,10 @@ public class Main {
                 // ViewerGenerator 클래스의 generateViewer 메서드를 호출하여 SVG 콘텐츠 생성
                 String svgContent = ViewerGenerator.generateViewer(
                     myData.get("name").toString(),
-                    (int) myData.get("level"),
+                    (int) ((Map<String,Object>) myData.get("skillCheck")).get("level"),
                     (Map<String, Object>) myData.get("ranking"), // 데이터 안정성을 버리고 Map으로 직접 캐스팅 
                     (Map<String, Object>) myData.get("codingTest"), // (이유: 이미 데이터 값은 null이 아님이 보장됨, 그리고 내 정보랑 다르면 애초에 버그니까 안 만드는 게 낫다고 생각)
-                    (int) myData.get("careerScore"),
+                    (int) ((Map<String,Object>) myData.get("career")).get("score"),
                     (int) myData.get("registerPeriod")
                 );
 
