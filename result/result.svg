@@ -108,7 +108,7 @@
 
     <!-- Header -->
     <g transform="translate(25, 35)">
-        <text x="0" y="0" class="header">함태준's Programmers Stats</text>
+        <text x="0" y="0" class="header">Jun rrayy's Programmers Stats</text>
 
     </g>
 
@@ -137,7 +137,7 @@
         <!-- Rank -->
         <g class="stagger" style="animation-delay: 450ms" transform="translate(25, 27)">
             <text class="stat" y="12.5">현 순위:</text>
-            <text class="stat-value" x="180" y="12.5">49,355위</text>
+            <text class="stat-value" x="180" y="12.5">49,357위</text>
         </g>
 
         <!-- Coding test 정답률 -->
