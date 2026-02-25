@@ -131,25 +131,25 @@
         <!-- Score -->
         <g class="stagger" style="animation-delay: 300ms" transform="translate(25, 0)">
             <text class="stat" y="12.5">현 랭킹 점수:</text>
-            <text class="stat-value" x="180" y="12.5">1,340점</text>
+            <text class="stat-value" x="180" y="12.5">1,341점</text>
         </g>
 
         <!-- Rank -->
         <g class="stagger" style="animation-delay: 450ms" transform="translate(25, 27)">
             <text class="stat" y="12.5">현 순위:</text>
-            <text class="stat-value" x="180" y="12.5">50,129위</text>
+            <text class="stat-value" x="180" y="12.5">49,910위</text>
         </g>
 
         <!-- Coding test 정답률 -->
         <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 54)">
             <text class="stat" y="12.5">코딩테스트 정답률:</text>
-            <text class="stat-value" x="180" y="12.5">21.4%</text>
+            <text class="stat-value" x="180" y="12.5">21.5%</text>
         </g>
 
         <!-- Coding test only solved -->
         <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 81)">
             <text class="stat" y="12.5">해결한 코딩테스트:</text>
-            <text class="stat-value" x="180" y="12.5">145 문제</text>
+            <text class="stat-value" x="180" y="12.5">146 문제</text>
         </g>
 
         <!-- Career -->
@@ -161,7 +161,7 @@
         <!-- Register period -->
         <g class="stagger" style="animation-delay: 1050ms" transform="translate(25, 132)">
             <text class="stat" y="12.5">가입 기간:</text>
-            <text class="stat-value" x="180" y="12.5">821일</text>
+            <text class="stat-value" x="180" y="12.5">823일</text>
         </g>
 
     </g>
